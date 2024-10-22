@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/result.css">
+    <title>Page avec colonne</title>
+</head>
+<body>
+
+<div class="header">
+    <a href="http://localhost:8080/"><h1>GROUPIE TRACKER</h1></a>
+</div>
+
+<div class="container">
+    <div class="left-container">
+        <h2>{{.Name}}</h2>
+        <div class="block">
+            {{range .T2}}
+            <ul>
+                <li>{{.}}</li>
+            </ul>
+            {{end}}
+
+        </div>
+    </div>
+    <div class="center-container">
+        <div class="block">
+            <img src={{.T1}} alt="Image Albulm"/>
+        </div>
+        <p>{{.T4}}</p>
+        <p>{{.T3}}</p>
+    </div>
+    <div class="right-container">
+        <h1>Concerts </h1>
+        <div class="block">
+            {{range $key,$value := .T7}}
+            <h2>{{$key}}</h2>
+            <ul>
+                {{range $value}}
+                <li> caca {{.}}</li>
+                {{end}}
+            </ul>
+            {{end}}
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-col">
+            <h3>A propos</h3>
+            <a href="https://trello.com/b/vzMeNoUD/groupietracker" target="_blank">Trello</a>
+        </div>
+        <div class="footer-col">
+            <h3>Ressources</h3>
+            <a href="#">Documents</a>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <a  href="mailto:adrien.froechly@ynov.com"><ion-icon name="mail"></ion-icon> FROECHLY Adrien</a>
+            <a href="mailto:celso.barros@ynov.com"><ion-icon name="mail"></ion-icon> Barros Celso</a>
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="https://github.com/Karabodjan/GROUPIE-TRACKER" target="_blank" class="social"
+        ><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+</footer>
+<script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+</body>
+</html>
