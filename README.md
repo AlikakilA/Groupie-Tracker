@@ -2,6 +2,8 @@
 
 Groupie Tracker est une application web permettant de suivre et de gérer des informations sur des artistes et groupes via une API. Elle offre une interface utilisateur intuitive pour filtrer les données en fonction de différents critères (nom, genre musical, date de création, etc.). Le backend est développé en **Golang**, tandis que le frontend utilise **JavaScript**, **HTML**, et **CSS**.
 
+![image](https://github.com/user-attachments/assets/fca263b6-60ab-479d-8946-1dd7caed1456)
+
 ## Fonctionnalités
 
 - Récupération de données depuis une API externe sur des artistes et groupes.
